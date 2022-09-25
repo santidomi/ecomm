@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+<h1>TecnoArg</h1>
+
+<p> Realización de un catalogo de productos a traves de ReactJs, utilizacion de filtrado segun categoria y vista en detalle de cada producto</p>
+<p> Manejo del stock con ReactState (próximamente mejorado)</p>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
