@@ -8,7 +8,6 @@ const ItemList = () => {
     const {id} = useParams()
     useEffect(() => {
 		if (id) {
-			console.log(id);
 			firestoreFetch(id)
             .then(res => setProducts(res))
 		} else {
