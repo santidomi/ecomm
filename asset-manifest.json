@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/htt%C2%B4s://santidomi.github.io/ecomm/static/css/main.3aea50b9.css",
-    "main.js": "/htt%C2%B4s://santidomi.github.io/ecomm/static/js/main.bd92861e.js",
-    "static/js/787.28cb0dcd.chunk.js": "/htt%C2%B4s://santidomi.github.io/ecomm/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/htt%C2%B4s://santidomi.github.io/ecomm/index.html",
-    "main.3aea50b9.css.map": "/htt%C2%B4s://santidomi.github.io/ecomm/static/css/main.3aea50b9.css.map",
-    "main.bd92861e.js.map": "/htt%C2%B4s://santidomi.github.io/ecomm/static/js/main.bd92861e.js.map",
-    "787.28cb0dcd.chunk.js.map": "/htt%C2%B4s://santidomi.github.io/ecomm/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/ecomm/static/css/main.3aea50b9.css",
+    "main.js": "/ecomm/static/js/main.a622618b.js",
+    "static/js/787.954ee95d.chunk.js": "/ecomm/static/js/787.954ee95d.chunk.js",
+    "index.html": "/ecomm/index.html",
+    "main.3aea50b9.css.map": "/ecomm/static/css/main.3aea50b9.css.map",
+    "main.a622618b.js.map": "/ecomm/static/js/main.a622618b.js.map",
+    "787.954ee95d.chunk.js.map": "/ecomm/static/js/787.954ee95d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3aea50b9.css",
-    "static/js/main.bd92861e.js"
+    "static/js/main.a622618b.js"
   ]
 }
