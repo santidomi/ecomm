@@ -16,35 +16,24 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore (app);
+export const firestoreFetch =  async(Id) => {
+	let q;
 
-  
-
-
-
-  export const firestoreFetch =  async(categoryId) => {
-    console.log(categoryId);
-	let q = query(collection(db, "products"));
-	if (categoryId) {
-		q = query(
-			collection(db, "products"),
-			where("categoryId", "==", categoryId)
-		);
-	} else {
-		q = query(collection(db, "products"));
-	}
-	const querySnapshot = await getDocs(q);
-	const dataFromFirestore = querySnapshot.docs.map((doc) => {
-		return {
-			id: doc.id,
-			...doc.data(),
-		};
-	});
-    console.log(dataFromFirestore)
+    if (Id) {
+        q = query(collection(db, "products"), where('categoryId', '==', Id));
+    }else{
+        q = query(collection(db, "products")); 
+    }
+    const querySnapshot = await getDocs(q);
+    const dataFromFirestore = querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+    }))
 	return dataFromFirestore;
 };
 
-export const getOneItem = async (id) => {
-	const docRef = doc(db, "products", id);
+export const getOneItem = async (Id) => {
+	const docRef = doc(db, "products", Id);
 	const docSnap = await getDoc(docRef);
 
 	if (docSnap.exists()) {
@@ -52,7 +41,6 @@ export const getOneItem = async (id) => {
             id : docSnap.id,
             ...docSnap.data()
         }
-        console.log(item);
         return item;
 
 	} else {

@@ -5,15 +5,15 @@ import { firestoreFetch } from "../utils/firebaseConfig";
 
 const ItemList = () => {
     const [products, setProducts] = useState([])
-    const {id} = useParams()
+    const {catId} = useParams()
     useEffect(() => {
-		if (id) {
-			firestoreFetch(id)
+		if (catId) {
+			firestoreFetch(catId)
             .then(res => setProducts(res))
 		} else {
 			firestoreFetch().then((res) => setProducts(res));
 		}
-	}, [id]);
+	}, [catId]);
 
     const itemElements = products.map(product => {
         return <Item key={product.id} img={product.Img} id={product.id} name={product.name} price={product.price} stock={product.stock} initial={product.quantity} />
